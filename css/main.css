@@ -22,9 +22,24 @@ textarea {
 html {
     color: #ffffff;
     font-family: Myriad Pro, serif;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.4;
     background: #51534f url("../img/back.jpg");
+}
+
+body {
+    width: 75%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.centered {
+    width: 75%;
+    margin: auto;
 }
 
 /*
