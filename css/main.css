@@ -1,3 +1,4 @@
+@import url('//fonts.googleapis.com/css?family=Myriad+Pro');
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
 /*
@@ -19,8 +20,11 @@ textarea {
 }
 
 html {
+    color: #ffffff;
+    font-family: Myriad Pro, serif;
     font-size: 1em;
     line-height: 1.4;
+    background: #51534f url("../img/back.jpg");
 }
 
 /*
