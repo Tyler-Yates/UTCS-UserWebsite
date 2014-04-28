@@ -1,4 +1,5 @@
 @import url('//fonts.googleapis.com/css?family=Myriad+Pro');
+
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
 /*
@@ -27,8 +28,16 @@ html {
     background: #51534f url("../img/back.jpg");
 }
 
-body {
-    width: 75%;
+img {
+    border: 0;
+}
+
+a {
+    color: Transparent;
+}
+
+.text {
+    width: 65%;
     margin: auto;
 }
 
@@ -37,9 +46,28 @@ h1 {
     font-size: 3em;
 }
 
+h2 {
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+}
+
 .centered {
-    width: 75%;
+    width: 95%;
     margin: auto;
+}
+
+.code {
+    position: relative;
+    left: 20px;
+    font-family: Courier New, sans-serif;
+}
+
+#github {
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
 }
 
 /*
@@ -115,22 +143,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -244,9 +256,9 @@ textarea {
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -279,7 +291,6 @@ textarea {
     /*
      * Don't show links for images, or javascript/internal links
      */
-
     .ir a:after,
     a[href^="javascript:"]:after,
     a[href^="#"]:after {

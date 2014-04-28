@@ -21,32 +21,77 @@
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
-<!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
+<div class="text">
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+        your browser</a> to improve your experience.</p>
+    <![endif]-->
 
-<!-- Add your site or application content here -->
-<p>
+    <!-- Add your site or application content here -->
+    <p>
 
-<h1>Aesthetically Pleasing Fractals</h1></p>
+    <h1>Aesthetically Pleasing Fractals</h1></p>
 
-<hr class="centered">
+    <hr class="centered">
 
-<h2>Abstract</h2>
-Fractals are defined as “a curve or geometric figure, each part of which has the same statistical character as the
-whole." They have been researched extensively, due in large part to the complex results that can arise from iterating
-over simple processes many times, and fractals have been found to model a wide range of natural phenomena. Each fractal
-family is defined by a basic mathematical structure, from which variations are created by altering the coefficients of
-the basic equation. Because these coefficients can be represented by floating point numbers, determining a genome for
-the fractals is potentially simple and can lead to computationally light mutations, through slight alteration of the
-coefficients, and crossovers, through an averaging of the parent’s coefficients. It is also possible to expand upon the
-process of generating offspring fractals by taking outside factors into account, and entire families can be generated
-programmatically through evolution of the equations themselves, creating potentially complex fractal patterns tended
-towards certain desirable features.
-<p></p>
-<h2>The Program</h2>
+    <h2>Abstract</h2>
+    Fractals are defined as “a curve or geometric figure, each part of which has the same statistical character as the
+    whole." They have been researched extensively, due in large part to the complex results that can arise from
+    iterating
+    over simple processes many times, and fractals have been found to model a wide range of natural phenomena. Each
+    fractal
+    family is defined by a basic mathematical structure, from which variations are created by altering the coefficients
+    of
+    the basic equation. Because these coefficients can be represented by floating point numbers, determining a genome
+    for
+    the fractals is potentially simple and can lead to computationally light mutations, through slight alteration of the
+    coefficients, and crossovers, through an averaging of the parent’s coefficients. It is also possible to expand upon
+    the
+    process of generating offspring fractals by taking outside factors into account, and entire families can be
+    generated
+    programmatically through evolution of the equations themselves, creating potentially complex fractal patterns tended
+    towards certain desirable features.
+    <p></p>
 
+    <h2>The Program</h2>
+    The Aesthetic Fractals Program allows users to evolve fractals to their liking using genetic programming. The
+    program
+    runs on Linux and uses the OpenGL framework for its graphics.
+
+    <p></p>
+
+    <h2>How to Git It</h2>
+    The program is hosted on Github <p></p>
+    Clone the project onto your machine:
+    <div class="code">
+        git clone https://github.com/Tyler-Yates/AestheticFractals.git<br>
+        cd AestheticFractals
+    </div>
+    <p></p>
+    Install the necessary dependencies:
+    <div class="code">sudo apt-get install libglu1-mesa-dev freeglut3-dev mesa-common-dev libglew-dev libpng-dev</div>
+    <p></p>
+    Build the dependencies:
+    <div class="code">
+        cd C-Genetics<br>
+        make<br>
+        cd libs/AntTweakBar/src<br>
+        make
+    </div>
+    <p></p>
+    Compile the program:
+    <div class="code">
+        cd ../../..<br>
+        mkdir output<br>
+        javac -d output -cp libs/exp4j-0.3.10.jar src/fractals/*.java src/graphics/*.java<br>
+    </div>
+    <p></p>
+    Run the program:
+    <div class="code">
+        java -cp "libs/exp4j-0.3.10.jar;output/*" graphics.GraphicalInterface
+    </div>
+</div>
+<a href="https://github.com/Tyler-Yates" id="github" target="_blank"><img src="img/GitHub-Mark-Light-64px.png"></a>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
