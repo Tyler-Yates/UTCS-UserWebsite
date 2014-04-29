@@ -22,7 +22,7 @@ textarea {
 
 html {
     color: #ffffff;
-    font-family: Myriad Pro, serif;
+    font-family: Myriad Pro, sans-serif;
     font-size: 1.1em;
     line-height: 1.4;
     background: #51534f url("../img/back.jpg");
