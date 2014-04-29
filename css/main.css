@@ -75,6 +75,12 @@ img.center {
     border-radius: 5px;
 }
 
+.right-bar {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+
 .left-bar {
     position: fixed;
     left: 15px;
