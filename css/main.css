@@ -33,7 +33,7 @@ img {
 }
 
 a {
-    color: Transparent;
+    color: white;
 }
 
 .text {
@@ -66,6 +66,7 @@ img.center {
 .code {
     position: relative;
     left: 20px;
+    width: calc(100% - 40px);
     font-family: Courier New, sans-serif;
     background: #ffffff;
     color: #000000;
@@ -74,9 +75,7 @@ img.center {
     border-radius: 5px;
 }
 
-#github {
-    width: 64px;
-    height: 64px;
+.left-bar {
     position: fixed;
     left: 15px;
     bottom: 15px;
@@ -343,4 +342,8 @@ textarea {
     h3 {
         page-break-after: avoid;
     }
+}
+
+a:active,a:focus {
+    outline: none;
 }
