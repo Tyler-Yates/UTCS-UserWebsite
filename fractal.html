@@ -71,10 +71,12 @@
     </div>
     <p></p>
     Install the necessary dependencies:
-    <div class="code">sudo apt-get install libglu1-mesa-dev freeglut3-dev mesa-common-dev libglew-dev libpng-dev</div>
+    <div class="code">sudo apt-get install libglu1-mesa-dev freeglut3-dev mesa-common-dev libglew-dev libpng-dev g++</div>
     <p></p>
     Build the dependencies:
     <div class="code">
+	git submodule init<br>
+	git submodule update<br>
         make -C C-Genetics/libs/AntTweakBar/src<br>
         make -C C-Genetics
     </div>
